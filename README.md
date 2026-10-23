@@ -116,13 +116,13 @@ plusieurs opérateurs, opérandes non numériques, etc.
 
 ## Tests
 
-Les tests automatisés seront ajoutés dans une phase ultérieure du projet
-(typiquement avec **pytest**). Une fois en place, la procédure prévue est :
+Les tests automatisés utilisent **pytest** et se trouvent dans `tests/`
+(voir [`tests/README.md`](tests/README.md) pour le détail de la couverture).
 
-1. Installer le framework de tests :
+1. Installer les dépendances (Flask et pytest) :
 
    ```bash
-   pip install pytest
+   pip install -r requirements.txt
    ```
 
 2. Exécuter toute la suite depuis la racine du projet :
@@ -137,11 +137,11 @@ Les tests automatisés seront ajoutés dans une phase ultérieure du projet
    pytest -v
    ```
 
-Les tests viseront notamment :
+Les tests couvrent :
 
 - les fonctions de `operators.py` (résultats attendus, cas limites) ;
 - la fonction `calculate` dans `app.py` (parsing, validation, erreurs) ;
-- éventuellement les routes Flask (requêtes GET/POST).
+- la route Flask `/` (requêtes GET/POST) et les libellés des boutons de l'interface.
 
 ## Flux de contribution
 
