@@ -128,13 +128,13 @@ Les tests automatisés utilisent **pytest** et se trouvent dans `tests/`
 2. Exécuter toute la suite depuis la racine du projet :
 
    ```bash
-   pytest
+   python -m pytest
    ```
 
 3. Afficher plus de détails en cas d'échec :
 
    ```bash
-   pytest -v
+   python -m pytest -v
    ```
 
 Les tests couvrent :

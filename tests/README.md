@@ -21,11 +21,11 @@ et à vérifier qu'un correctif règle bien le problème sans en créer d'autres
 Depuis la racine du projet, avec l'environnement virtuel activé :
 
 ```bash
-pip install -r requirements.txt   # installe flask et pytest
-pytest                            # lance toute la suite
-pytest -v                         # affiche chaque test individuellement
-pytest tests/test_operators.py    # lance un seul fichier
-pytest -k divide                  # lance les tests dont le nom contient "divide"
+pip install -r requirements.txt             # installe flask et pytest
+python -m pytest                            # lance toute la suite
+python -m pytest -v                         # affiche chaque test individuellement
+python -m pytest tests/test_operators.py    # lance un seul fichier
+python -m pytest -k divide                  # lance les tests dont le nom contient "divide"
 ```
 
 ## Couverture
